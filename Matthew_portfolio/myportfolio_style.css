@@ -1,0 +1,82 @@
+header {
+    background-color: #333;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    /*text-align: right;*/
+    padding: 0px;
+    height: 5vh;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+ul {
+    background-color: #333;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: black;
+}
+
+article {
+    background: url("tech_pic.jpg");
+    background-size: cover;
+    height: 95vh;
+    text-align: center;
+}
+
+p {
+    padding-top: 350px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.button {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    font-size: 35px;
+    border: 5px solid white;
+    border-radius: 22px;
+    background: rgba(0, 0, 0, 0);
+    padding: 14px;
+    cursor: pointer;
+    margin: 400px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+.button:hover {
+    background: white;
+    color: #0561A1;
+    transition-duration: 0.4s;
+}
