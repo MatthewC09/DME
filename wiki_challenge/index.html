@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubik's Cube</title>
+    <link rel="stylesheet" href="index_style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Rubik's Cube</h1>
+    </div>
+
+    <div class="body">
+        <div class="content-nav">
+            <ul class="list">
+                <h3>Table of Contents</h3>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#mechanics">Mechanics</a></li>
+                <li><a href="#mathematics">Mathematics</a></li>
+                <li><a href="#permutation" style="padding-left: 15px;">Permutation</a></li>
+                <li><a href="#centre-face" style="padding-left: 15px;">Centre-faces</a></li>
+                <li><a href="#algorithm" style="padding-left: 15px;">Algorithms</a></li>
+                <li><a href="#application" style="padding-left: 15px;">Application</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+        </div>
+
+        <div class="sections">
+            <div id="summary">
+                <h2>Summary</h2>
+                <p>
+                    <img src="https://media.ipassio.com/media/blog/benefits-of-solving-rubiks-cube/blog_icon/benefits-of-solving-rubiks-cube.jpg"
+                        alt="summary image">
+                    The Rubik's Cube is a 3-D combination puzzle originally invented in 1974<sup><a
+                            href="#ref">[2]</a></sup><sup><a href="#ref">[3]</a></sup>
+                    by
+                    Hungarian sculptor
+                    and
+                    professor of architecture Ernő Rubik. Originally called the Magic Cube,<sup><a
+                            href="#ref">[4]</a></sup> the puzzle was
+                    licensed
+                    by
+                    Rubik to be sold by Pentangle Puzzles in the UK in 1978,<sup><a href="#ref">[5]</a></sup> and then
+                    by Ideal Toy Corp in
+                    1980<sup><a href="#ref">[6]</a></sup>
+                    via
+                    businessman Tibor Laczi and Seven Towns founder Tom Kremer.<sup><a href="#ref">[7]</a></sup> The
+                    cube was released
+                    internationally
+                    in
+                    1980 and became one of the most recognized icons in popular culture. It won the 1980 German Game of
+                    the
+                    Year special award for Best Puzzle. As of January 2009, 350 million cubes had been sold
+                    worldwide,<sup><a href="#ref">[8]</a></sup><sup><a href="#ref">[9]</a></sup>[needs update] making it
+                    the world's bestselling puzzle game<sup><a href="#ref">[10]</a></sup><sup><a
+                            href="#ref">[11]</a></sup> and bestselling
+                    toy.<sup><a href="#ref">[12]</a></sup> The Rubik's Cube was inducted into the US National Toy Hall
+                    of Fame in 2014.<sup><a href="#ref">[13]</a></sup>
+
+                    On the original classic Rubik's Cube, each of the six faces was covered by nine stickers, each of
+                    one of
+                    six solid colours: white, red, blue, orange, green, and yellow. Some later versions of the cube have
+                    been updated to use coloured plastic panels instead, which prevents peeling and fading.<sup><a
+                            href="#ref">[14]</a></sup> Since
+                    1988,
+                    the arrangement of colours has been standardised with white opposite yellow, blue opposite green,
+                    and
+                    orange opposite red, and the red, white, and blue arranged clockwise in that order.<sup><a
+                            href="#ref">[15]</a></sup> On early
+                    cubes,
+                    the position of the colours varied from cube to cube.<sup><a href="#ref">[16]</a></sup>
+
+                    An internal pivot mechanism enables each face to turn independently, thus mixing up the colours. For
+                    the
+                    puzzle to be solved, each face must be returned to have only one colour. Similar puzzles have now
+                    been
+                    produced with various numbers of sides, dimensions, and stickers, not all of them by Rubik.
+
+                    Although the Rubik's Cube reached its height of mainstream popularity in the 1980s, it is still
+                    widely
+                    known and used. Many speedcubers continue to practise it and similar puzzles, and compete for the
+                    fastest times in various categories. Since 2003, the World Cube Association, the international
+                    governing
+                    body of the Rubik's Cube, has organised competitions worldwide and recognises world records.
+                </p>
+            </div>
+
+            <div id="history">
+                <h2>History</h2>
+                <p>
+                    In the mid-1970s, Ernő Rubik worked at the Department of Interior Design at the Academy of Applied
+                    Arts
+                    and Crafts in Budapest.[18] Although it is widely reported that the Cube was built as a teaching
+                    tool to
+                    help his students understand 3D objects, his actual purpose was solving the structural problem of
+                    moving
+                    the parts independently without the entire mechanism falling apart. He did not realise that he had
+                    created a puzzle until the first time he scrambled his new Cube and then tried to restore it.[19]
+                    Rubik
+                    applied for a patent in Hungary for his "Magic Cube" (Hungarian: Bűvös kocka) on 30 January 1975,[4]
+                    and
+                    HU170062 was granted later that year.
+
+                    The first test batches of the Magic Cube were produced in late 1977 and released in Budapest toy
+                    shops.
+                    Magic Cube was held together with interlocking plastic pieces that prevented the puzzle being easily
+                    pulled apart, unlike the magnets in Nichols's design. With Ernő Rubik's permission, businessman
+                    Tibor
+                    Laczi took a Cube to Germany's Nuremberg Toy Fair in February 1979 in an attempt to popularise
+                    it.[20]
+                    It was noticed by Seven Towns founder Tom Kremer, and they signed a deal with Ideal Toys in
+                    September
+                    1979 to release the Magic Cube worldwide.[20] Ideal wanted at least a recognisable name to
+                    trademark;
+                    that arrangement put Rubik in the spotlight because the Magic Cube was renamed after its inventor in
+                    1980. The puzzle made its international debut at the toy fairs of London, Paris, Nuremberg, and New
+                    York
+                    in January and February 1980.[21]
+
+                    After its international debut, the progress of the Cube towards the toy shop shelves of the West was
+                    briefly halted so that it could be manufactured to Western safety and packaging specifications. A
+                    lighter Cube was produced, and Ideal decided to rename it. "The Gordian Knot" and "Inca Gold" were
+                    considered, but the company finally decided on "Rubik's Cube", and the first batch was exported from
+                    Hungary in May 1980.[22]
+                </p>
+            </div>
+
+            <div id="mechanics">
+                <h2>Mechanics</h2>
+                <p>
+                    A standard Rubik's Cube measures 5.6 centimetres (2+1⁄4 in) on each side.[49] The puzzle consists of
+                    26
+                    unique miniature cubes, also known as "cubies" or "cubelets". Each of these includes a concealed
+                    inward
+                    extension that interlocks with the other cubes while permitting them to move to different locations.
+                    However, the centre cube of each of the six faces is merely a single square façade; all six are
+                    affixed
+                    to the core mechanism. These provide structure for the other pieces to fit into and rotate around.
+                    Hence, there are 21 pieces: a single core piece consisting of three intersecting axes holding the
+                    six
+                    centre squares in place but letting them rotate, and 20 smaller plastic pieces that fit into it to
+                    form
+                    the assembled puzzle.[50]
+
+                    Each of the six centre pieces pivots on a screw (fastener) held by the centre piece, a "3D cross". A
+                    spring between each screw head and its corresponding piece tensions the piece inward, so that
+                    collectively, the whole assembly remains compact but can still be easily manipulated. The screw can
+                    be
+                    tightened or loosened to change the "feel" of the Cube. Newer official Rubik's brand cubes have
+                    rivets
+                    instead of screws and cannot be adjusted. However, Old Cubes made by the Rubik's Brand Ltd. and from
+                    dollar stores do not have screws or springs, all they have is a plastic clip to keep the centre
+                    piece in
+                    place and freely rotate.
+
+                    The Cube can be taken apart without much difficulty, typically by rotating the top layer by 45° and
+                    then
+                    prying one of its edge cubes away from the other two layers. Consequently, it is a simple process to
+                    "solve" a Cube by taking it apart and reassembling it in a solved state.
+
+                    There are six central pieces that show one coloured face, twelve edge pieces that show two coloured
+                    faces, and eight corner pieces that show three coloured faces. Each piece shows a unique colour
+                    combination, but not all combinations are present (for example, if red and orange are on opposite
+                    sides
+                    of the solved Cube, there is no edge piece with both red and orange sides). The location of these
+                    cubes
+                    relative to one another can be altered by twisting an outer third of the Cube by increments of 90
+                    degrees, but the location of the coloured sides relative to one another in the completed state of
+                    the
+                    puzzle cannot be altered; it is fixed by the relative positions of the centre squares. However,
+                    Cubes
+                    with alternative colour arrangements also exist; for example, with the yellow face opposite the
+                    green,
+                    the blue face opposite the white, and red and orange remaining opposite each other.
+
+                    Douglas Hofstadter, in the July 1982 issue of Scientific American, pointed out that Cubes could be
+                    coloured in such a way as to emphasise the corners or edges, rather than the faces as the standard
+                    colouring does; but neither of these alternative colourings has ever become popular.[44]
+                </p>
+            </div>
+
+            <div id="mathematics">
+                <h2>Mathematics</h2>
+                <p>
+                    The puzzle was originally advertised as having "over 3,000,000,000 (three billion) combinations but
+                    only
+                    one solution".[51] Depending on how combinations are counted, the actual number is significantly
+                    higher.
+                </p>
+                <div id="#permutation">
+                    <h3>Permutations</h3>
+                    <p>
+                        The original (3×3×3) Rubik's Cube has eight corners and twelve edges. There are 8! (40,320) ways
+                        to
+                        arrange the corner cubes. Each corner has three possible orientations, although only seven (of
+                        eight)
+                        can be oriented independently; the orientation of the eighth (final) corner depends on the
+                        preceding
+                        seven, giving 37 (2,187) possibilities. There are 12!/2 (239,500,800) ways to arrange the edges,
+                        restricted from 12! because edges must be in an even permutation exactly when the corners are.
+                        (When
+                        arrangements of centres are also permitted, as described below, the rule is that the combined
+                        arrangement of corners, edges, and centres must be an even permutation.) Eleven edges can be
+                        flipped
+                        independently, with the flip of the twelfth depending on the preceding ones, giving 211 (2,048)
+                        possibilities. To put this into perspective, if one had one standard-sized Rubik's Cube for each
+                        permutation, one could cover the Earth's surface 275 times, or stack them in a tower 261
+                        light-years high.
+
+                        The preceding figure is limited to permutations that can be reached solely by turning the sides
+                        of the cube. If one considers permutations reached through disassembly of the cube, the number
+                        becomes twelve times larger.This is because there is no sequence of moves that will swap a
+                        single pair of pieces or rotate a single corner or edge cube. Thus, there are 12 possible sets
+                        of reachable configurations, sometimes called "universes" or "orbits", into which the cube can
+                        be placed by dismantling and reassembling it.
+
+                        The preceding numbers assume the centre faces are in a fixed position. If one considers turning
+                        the whole cube to be a different permutation, then each of the preceding numbers should be
+                        multiplied by 24. A chosen colour can be on one of six sides, and then one of the adjacent
+                        colours can be in one of four positions; this determines the positions of all remaining colours.
+                    </p>
+                </div>
+                <div id="centre-face">
+                    <h3>Centre Faces</h3>
+                    <p>
+                        The original Rubik's Cube had no orientation markings on the centre faces (although some carried
+                        the "Rubik's Cube" mark on the centre square of the white face), and therefore solving it does
+                        not require any attention to orienting those faces correctly. However, with marker pens, one
+                        could, for example, mark the central squares of an unscrambled Cube with four coloured marks on
+                        each edge, each corresponding to the colour of the adjacent face; a cube marked in this way is
+                        referred to as a "supercube". Some Cubes have also been produced commercially with markings on
+                        all of the squares, such as the Lo Shu magic square or playing card suits. Cubes have also been
+                        produced where the nine stickers on a face are used to make a single larger picture, and centre
+                        orientation matters on these as well. Thus one can nominally solve a Cube yet have the markings
+                        on the centres rotated; it then becomes an additional test to solve the centres as well.
+
+                        Marking Rubik's Cube's centres increases its difficulty, because this expands the set of
+                        distinguishable possible configurations. There are 46/2 (2,048) ways to orient the centres since
+                        an even permutation of the corners implies an even number of quarter turns of centres as well.
+                        In particular, when the Cube is unscrambled apart from the orientations of the central squares,
+                        there will always be an even number of centre squares requiring a quarter turn. Thus
+                        orientations of centres increases the total number of possible Cube permutations from
+                        43,252,003,274,489,856,000 (4.3×1019) to 88,580,102,706,155,225,088,000 (8.9×1022).[54]
+
+                        When turning a cube over is considered to be a change in permutation then we must also count
+                        arrangements of the centre faces. Nominally there are 6! ways to arrange the six centre faces of
+                        the cube, but only 24 of these are achievable without disassembly of the cube. When the
+                        orientations of centres are also counted, as above, this increases the total number of possible
+                        Cube permutations from 88,580,102,706,155,225,088,000 (8.9×1022) to
+                        2,125,922,464,947,725,402,112,000 (2.1×1024).
+                    </p>
+                </div>
+                <div id="algorithms">
+                    <h3>Algorithms</h3>
+                    <p>
+                        In Rubik's cubers' parlance, a memorised sequence of moves that has a desired effect on the cube
+                        is called an "algorithm". This terminology is derived from the mathematical use of algorithm,
+                        meaning a list of well-defined instructions for performing a task from a given initial state,
+                        through well-defined successive states, to a desired end-state. Each method of solving the Cube
+                        employs its own set of algorithms, together with descriptions of what effect the algorithm has,
+                        and when it can be used to bring the cube closer to being solved.
+
+                        Many algorithms are designed to transform only a small part of the cube without interfering with
+                        other parts that have already been solved so that they can be applied repeatedly to different
+                        parts of the cube until the whole is solved. For example, there are well-known algorithms for
+                        cycling three corners without changing the rest of the puzzle or flipping the orientation of a
+                        pair of edges while leaving the others intact.
+
+                        Some algorithms do have a certain desired effect on the cube (for example, swapping two corners)
+                        but may also have the side-effect of changing other parts of the cube (such as permuting some
+                        edges). Such algorithms are often simpler than the ones without side effects and are employed
+                        early on in the solution when most of the puzzle has not yet been solved and the side effects
+                        are not important. Towards the end of the solution, the more specific (and usually more
+                        complicated) algorithms are used instead.
+                    </p>
+                </div>
+                <div id="application">
+                    <h3>Relevance and application of mathematical group theory</h3>
+                    <p>
+                        Rubik's Cube lends itself to the application of mathematical group theory, which has been
+                        helpful for deducing certain algorithms – in particular, those which have a commutator
+                        structure, namely XYX−1Y−1 (where X and Y are specific moves or move-sequences and X−1 and Y−1
+                        are their respective inverses), or a conjugate structure, namely XYX−1, often referred to by
+                        speedcubers colloquially as a "setup move".[55] In addition, the fact that there are
+                        well-defined subgroups within the Rubik's Cube group enables the puzzle to be learned and
+                        mastered by moving up through various self-contained "levels of difficulty". For example, one
+                        such "level" could involve solving cubes that have been scrambled using only 180-degree turns.
+                        These subgroups are the principle underlying the computer cubing methods by Thistlethwaite and
+                        Kociemba, which solve the cube by further reducing it to another subgroup.
+                    </p>
+                </div>
+            </div>
+
+            <div id="references">
+                <h3 id="ref">References</h3>
+                <ol>
+                    <li>Evans, Pete (27 October 2020). "Canadian company that owns classic toys Etch A Sketch
+                        and
+                        Aerobie buys Rubik's Cube for $50M". CBC News.</li>
+                    <li> Fotheringham, William (2007). Fotheringham's Sporting Pastimes. Anova Books. p. 50. ISBN
+                        978-1-86105-953-6.</li>
+                    <li> de Castella, Tom (28 April 2014). "The people who are still addicted to the Rubik's Cube". BBC
+                        News Magazine. BBC. Retrieved 28 April 2014.</li>
+                    <li>"Jan. 30, 1975: Rubik Applies for Patent on Magic Cube". Wired. 30 January 2009. Retrieved 24
+                        January 2019.</li>
+                    <li>"25th Anniversa[r]y of Erno Rubik's Magic Cube. First introduced to the Western World by
+                        Pentangle Puzzles in 1978". puzzlemuseum.com/. Retrieved 29 November 2020.</li>
+                    <li> "25th Anniversa[r]y of Erno Rubik's Magic Cube. First introduced to the Western World by
+                        Pentangle Puzzles in 1978".</li>
+                    <li> Daintith, John (1994). A Biographical Encyclopedia of Scientists. Bristol: Institute of Physics
+                        Pub. p. 771. ISBN 0-7503-0287-9.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
